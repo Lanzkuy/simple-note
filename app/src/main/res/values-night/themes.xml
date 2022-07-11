@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SimpleNote" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_10</item>
+        <item name="colorPrimaryVariant">@color/blue_90</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_70</item>
+        <item name="colorSecondaryVariant">@color/blue_30</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+        <item name="toolbarStyle">@style/Widget.SimpleNote.Toolbar</item>
+        <item name="actionOverflowButtonStyle">@style/ActionButton.SimpleNote.Overflow</item>
+        <item name="alertDialogTheme">@style/Theme.Material3.Light.Dialog</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="Widget.SimpleNote.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:theme">@style/ThemeOverlay.SimpleNote.Toolbar</item>
+        <item name="titleTextAppearance">@style/TextAppearance.SimpleNote.Title</item>
+    </style>
+    <style name="ThemeOverlay.SimpleNote.Toolbar" parent="">
+        <item name="colorSurface">?attr/colorPrimaryVariant</item>
+        <item name="colorOnSurface">?attr/colorOnPrimary</item>
+        <item name="colorControlNormal">?attr/colorOnPrimary</item>
+        <item name="android:editTextColor">?attr/colorOnPrimary</item>
+        <item name="android:textColorHint">?attr/colorOnPrimary</item>
+    </style>
+    <style name="ThemeOverlay.SimpleNote.Overflow" parent="">
+        <item name="colorSurface">?attr/colorPrimary</item>
+    </style>
+    <style name="TextAppearance.SimpleNote.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="ActionButton.SimpleNote.Overflow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_baseline_more_vert</item>
+    </style>
+</resources>

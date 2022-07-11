@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Simple Note</string>
+    <string name="titleToolbar">Notes</string>
+    <string name="titleNoteContentHint">Title</string>
+    <string name="titleNoteContentItem">Title</string>
+    <string name="titleAppBarItemSearch">Search</string>
+    <string name="titleAppBarItemSelect">Select</string>
+    <string name="titleAppBarItemSort">Sort</string>
+    <string name="titleAppBarItemView">View</string>
+    <string name="textNoteContentHint">Type here…</string>
+    <string name="textNoteLastUpdated">13:00 AM</string>
+</resources>
